@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -668,6 +669,13 @@ h1,h2,h3 {
 /* navbar */
 .container-footer-navbar-wrapper{
     position: relative;
+}
+
+
+.click-button{
+    background-color: rebeccapurple;
+    padding: 1rem 5rem;
+    border: none;
 }
 
 /* responsive */
