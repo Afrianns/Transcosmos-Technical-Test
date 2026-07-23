@@ -2,9 +2,22 @@
 $(document).ready(function () {
   $("#slider-m-wrapper").slick({
     dots: true,
+    Infinity: true,
     prevArrow: $(".slick-prev"),
     appendDots: $("#dots-wrapper"),
     nextArrow: $(".slick-next"),
+    slidesToShow: 1,
+     responsive: [
+        {
+        breakpoint: 900,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+        },
+    ]
   });
 });
 

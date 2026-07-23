@@ -7,6 +7,7 @@
 
 :root {
   ---border-style: 3px solid #fff;
+  --background-color: #111;
   /* gradient */
   --teal: #c6f1f7;
   --pinkish: #f983e9;
@@ -69,7 +70,7 @@ h3 {
   right: 0;
   z-index: -1;
   background: url("../images/bg_header.png");
-  background-color: #111;
+  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -77,6 +78,7 @@ h3 {
 .container-navbar-wrapper,
 .container-footer-navbar-wrapper {
   display: flex;
+  position: relative;
   height: fit-content;
   border: var(---border-style);
 }
@@ -250,6 +252,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
+  column-gap: 1rem;
 }
 
 .anchor-point-link {
@@ -565,21 +568,16 @@ h3 {
   right: 4rem;
 }
 
-.slider-wrapper {
-  padding: 1rem;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-}
-
 .inside-wrapper {
-  width: 1250px;
+  padding: 2rem 0;
+  margin: auto;
+  position: relative;
   display: flex;
 }
 
-.section-six-wrapper .slide-wrapper,
-.slider-wrapper {
+.section-six-wrapper .slick-initialized .slick-slide {
   display: flex;
+  width: 100%;
   align-items: center;
 }
 
@@ -604,6 +602,7 @@ h3 {
 
 .slider-content-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .slider-content {
@@ -616,6 +615,11 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   max-width: 30rem;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 20rem;
 }
 
 .main-content h2 {
@@ -681,6 +685,12 @@ h3 {
 
 /* responsive */
 
+@media screen and (max-width: 1100px) {
+  .brand-wrapper h3 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   /* header */
   .navbar-wrapper {
@@ -688,10 +698,9 @@ h3 {
     width: auto;
     flex-direction: column;
     position: absolute;
-    background-color: #111;
     top: 10rem;
-    left: 1rem;
-    right: 1rem;
+    left: 0;
+    right: 0;
     z-index: 2;
     bottom: 0;
   }
@@ -699,6 +708,7 @@ h3 {
   /* navbar menu top */
   .navbar-menu-top,
   .navbar-menu-bottom {
+    background-color: var(--background-color);
     flex-direction: column;
   }
   .navbar-menu-top h4,
@@ -738,11 +748,12 @@ h3 {
 
   .desc-tagline-wrapper {
     margin-top: 5rem;
+    width: 100%;
   }
 
   /* menu nav */
 
-  .main-anchor-point {
+  .anchor-point-wrapper .main-anchor-point {
     width: 100%;
     column-gap: 1rem;
   }
@@ -941,14 +952,20 @@ h3 {
 
   /* section five */
 
-  .section-five-main-wrapper {
+  .section-five-wrapper-background .section-five-main-wrapper {
     display: grid;
+    padding: 5rem 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
 
   .section-five-header-wrapper {
     grid-column: span 2;
+  }
+
+  .section-five-header-wrapper img {
+    right: 5rem;
+    width: 4.5rem;
   }
 
   .main-description-section-five {
@@ -959,6 +976,10 @@ h3 {
   .section-five-footer-wrapper {
     margin: 1rem;
     flex-direction: column;
+  }
+
+  .spacing-y > * {
+    margin: 1rem 0;
   }
   /* end section five */
 
@@ -1010,7 +1031,7 @@ h3 {
   }
 
   .footer-navbar-wrapper {
-    background-color: #111;
+    background-color: var(--background-color);
     position: absolute;
     display: none;
     bottom: 15rem;
@@ -1025,8 +1046,7 @@ h3 {
     flex-direction: column;
   }
 
-  .section-six-wrapper .slide-wrapper,
-  .slider-wrapper {
+  .section-six-wrapper .slick-initialized .slick-slide {
     flex-direction: column;
   }
 }
@@ -1072,7 +1092,7 @@ h3 {
     max-width: 335px;
     flex-direction: column;
     position: absolute;
-    background-color: #111;
+    background-color: var(--background-color);
     top: 6rem;
     bottom: auto;
     z-index: 5;
@@ -1134,6 +1154,10 @@ h3 {
 
   /* end section four */
 
+  .footer-navbar-wrapper {
+    bottom: 10rem;
+  }
+
   /* slider style */
   .container-footer-navbar-wrapper .brand-wrapper {
     justify-content: center;
@@ -1141,9 +1165,11 @@ h3 {
     align-items: center;
     padding: 0.5rem;
   }
+
   .container-footer-navbar-wrapper .brand-wrapper h3 {
     font-size: 0.5rem;
   }
+
   .section-five-footer-wrapper {
     margin: 1rem auto;
   }
