@@ -927,6 +927,7 @@ h3 {
   }
 
   /* section four */
+
   .section-four-header-wrapper p {
     margin: 2rem 0;
   }
@@ -977,6 +978,10 @@ h3 {
     padding: 1rem;
   }
 
+  .content-tab-selection-wrapper .description-content-tab-first {
+      width: 100%;
+  }
+
   .table-tab-selection-wrapper .menu-link-tab-wrapper h3 {
     font-size: 1.375rem;
   }
@@ -986,7 +991,7 @@ h3 {
   }
 
   .content-tab-selection-wrapper img {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   /* tab selection */
