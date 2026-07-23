@@ -296,7 +296,11 @@ h3 {
   position: relative;
 }
 
-.section-two-wrapper h1::after {
+.dreams-wrapper{
+  position: relative;
+}
+
+.section-two-wrapper h1 .dreams-wrapper::after {
   content: "";
   position: absolute;
   bottom: -1rem;
@@ -390,13 +394,24 @@ h3 {
 /* section four */
 
 .section-four-header-wrapper {
-  position: relative;
   max-width: 50rem;
 }
 
-.section-four-header-wrapper img {
-  position: absolute;
-  right: 7.5rem;
+/* decor */
+.section-four-header-wrapper .achieved-wrapper{
+  position: relative;
+}
+
+.section-four-header-wrapper .achieved-wrapper::after{
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background-image: url("/images/ico_dash-long.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .section-four-main-wrapper {
@@ -420,6 +435,10 @@ h3 {
 }
 
 .description-section-four-wrapper:nth-child(3) {
+  justify-self: start;
+}
+
+.description-section-four-wrapper:nth-child(4) {
   justify-self: end;
 }
 
@@ -506,7 +525,6 @@ h3 {
   right: 0;
   z-index: -1;
   background: url("../images/bg_get-started.png");
-  background-color: #b877ff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -519,13 +537,23 @@ h3 {
 }
 
 .section-five-header-wrapper {
-  position: relative;
   max-width: 30rem;
 }
 
-.section-five-header-wrapper img {
-  position: absolute;
-  right: 3rem;
+.section-five-header-wrapper .and-wrapper{
+    position: relative;
+}
+
+.section-five-header-wrapper .and-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background-image: url("/images/ico_dash.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .repeated-text-invitation {
@@ -558,15 +586,25 @@ h3 {
 /* section six */
 
 .section-six-header-wrapper {
-  position: relative;
   overflow: hidden;
   max-width: 35rem;
 }
 
-.section-six-header-wrapper img {
-  position: absolute;
-  right: 4rem;
-}
+  .section-six-header-wrapper .our-wrapper{
+    position: relative;
+  }
+
+  .section-six-header-wrapper .our-wrapper::after{
+      content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background-image: url("/images/ico_dash.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
 .inside-wrapper {
   padding: 2rem 0;
@@ -686,7 +724,7 @@ h3 {
 /* responsive */
 
 @media screen and (max-width: 1100px) {
-  .brand-wrapper h3 {
+  .container-navbar-wrapper .brand-wrapper h3 {
     display: none;
   }
 }
@@ -809,13 +847,21 @@ h3 {
     position: relative;
   }
 
-  .section-two-wrapper h1::after {
+  .section-two-wrapper h1 .dreams-wrapper::after {
+    display: none;
+  }
+
+  .section-two-wrapper h1 .reality-wrapper{
+    position: relative;
+  }
+
+  .section-two-wrapper h1 .reality-wrapper::after {
     content: "";
     position: absolute;
     bottom: -1rem;
     left: 0;
-    width: 20rem;
-    height: 10px;
+    right: 0;
+    height: 0.625rem;
     background-image: url("/images/ico_dash-long.png");
     background-repeat: no-repeat;
   }
@@ -873,17 +919,28 @@ h3 {
   }
 
   /* section four */
-
-  .section-four-header-wrapper {
-    position: relative;
-    max-width: 50rem;
+  .section-four-header-wrapper p{
+    margin: 2rem 0;
+  }
+  
+  .section-four-header-wrapper .achieved-wrapper::after{
+      display: none;
   }
 
-  .section-four-header-wrapper img {
-    position: absolute;
-    width: 20rem;
-    bottom: -1rem;
-    left: 0;
+  .section-four-header-wrapper .objectives-wrapper{
+    position: relative;
+  }
+
+  .section-four-header-wrapper .objectives-wrapper::after{
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      right: 0;
+      height: 1rem;
+      background-image: url("/images/ico_dash-long.png");
+      background-repeat: no-repeat;
+      background-size: contain;
   }
 
   .section-four-main-wrapper {
@@ -905,10 +962,6 @@ h3 {
 
   .description-section-four-wrapper:nth-child(3) {
     justify-self: start;
-  }
-
-  .section-four-main-wrapper p:nth-child(1) {
-    display: none;
   }
 
   /* tabbing */
@@ -945,7 +998,7 @@ h3 {
   }
 
   .only-show-desktop {
-    display: none;
+    display: none !important;
   }
 
   /* end section four */
@@ -954,7 +1007,6 @@ h3 {
 
   .section-five-wrapper-background .section-five-main-wrapper {
     display: grid;
-    padding: 5rem 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
@@ -963,14 +1015,35 @@ h3 {
     grid-column: span 2;
   }
 
-  .section-five-header-wrapper img {
-    right: 5rem;
-    width: 4.5rem;
-  }
+  .section-five-header-wrapper .and-wrapper{
+    position: relative;
+}
+
+.section-five-header-wrapper .and-wrapper::after{
+    display: none;
+}
+
+.section-five-header-wrapper .experience-wrapper{
+    position: relative;
+}
+
+
+.section-five-header-wrapper .experience-wrapper::after{
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background-image: url("/images/ico_dash-so-long.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
   .main-description-section-five {
     width: 80%;
     grid-column: span 2;
+    align-self: center;
   }
 
   .section-five-footer-wrapper {
@@ -984,6 +1057,12 @@ h3 {
   /* end section five */
 
   /* section six */
+
+  .section-six-header-wrapper .our-wrapper::after{
+    display: none;
+  }
+
+
   .slider-content-wrapper {
     position: relative;
   }
@@ -1012,6 +1091,7 @@ h3 {
   .container-footer-navbar-wrapper {
     flex-direction: column;
   }
+
 
   .navbar-footer-menu-wrapper {
     display: flex;
@@ -1132,11 +1212,6 @@ h3 {
     letter-spacing: 0.5px;
   }
 
-  /* section four */
-  .section-four-header-wrapper img {
-    width: 12rem;
-  }
-
   .description-section-four-wrapper {
     max-width: 335px;
   }
@@ -1153,6 +1228,12 @@ h3 {
   }
 
   /* end section four */
+
+  /* section five */
+  .section-five-main-wrapper{
+    padding: 3rem 0;
+  }
+  /* end section five */
 
   .footer-navbar-wrapper {
     bottom: 10rem;
