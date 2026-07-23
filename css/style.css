@@ -296,7 +296,7 @@ h3 {
   position: relative;
 }
 
-.dreams-wrapper{
+.dreams-wrapper {
   position: relative;
 }
 
@@ -398,20 +398,20 @@ h3 {
 }
 
 /* decor */
-.section-four-header-wrapper .achieved-wrapper{
+.section-four-header-wrapper .achieved-wrapper {
   position: relative;
 }
 
-.section-four-header-wrapper .achieved-wrapper::after{
-    content: "";
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
-    right: 0;
-    height: 1rem;
-    background-image: url("/images/ico_dash-long.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+.section-four-header-wrapper .achieved-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-image: url("/images/ico_dash-long.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .section-four-main-wrapper {
@@ -540,20 +540,20 @@ h3 {
   max-width: 30rem;
 }
 
-.section-five-header-wrapper .and-wrapper{
-    position: relative;
+.section-five-header-wrapper .and-wrapper {
+  position: relative;
 }
 
-.section-five-header-wrapper .and-wrapper::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1rem;
-    background-image: url("/images/ico_dash.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+.section-five-header-wrapper .and-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-image: url("/images/ico_dash.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .repeated-text-invitation {
@@ -590,21 +590,21 @@ h3 {
   max-width: 35rem;
 }
 
-  .section-six-header-wrapper .our-wrapper{
-    position: relative;
-  }
+.section-six-header-wrapper .our-wrapper {
+  position: relative;
+}
 
-  .section-six-header-wrapper .our-wrapper::after{
-      content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1rem;
-    background-image: url("/images/ico_dash.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+.section-six-header-wrapper .our-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-image: url("/images/ico_dash.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .inside-wrapper {
   padding: 2rem 0;
@@ -724,8 +724,15 @@ h3 {
 /* responsive */
 
 @media screen and (max-width: 1100px) {
-  .container-navbar-wrapper .brand-wrapper h3 {
-    display: none;
+  .brand-wrapper {
+    padding: 1rem;
+  }
+
+  .navbar-menu-top > *,
+  .footer-navbar-menu-top > *,
+  .navbar-menu-bottom > *,
+  .footer-navbar-menu-bottom > * {
+    padding: 1rem;
   }
 }
 
@@ -817,6 +824,7 @@ h3 {
     max-width: 100%;
     width: 100%;
   }
+
   /* end header */
 
   .container {
@@ -851,7 +859,7 @@ h3 {
     display: none;
   }
 
-  .section-two-wrapper h1 .reality-wrapper{
+  .section-two-wrapper h1 .reality-wrapper {
     position: relative;
   }
 
@@ -919,28 +927,28 @@ h3 {
   }
 
   /* section four */
-  .section-four-header-wrapper p{
+  .section-four-header-wrapper p {
     margin: 2rem 0;
   }
-  
-  .section-four-header-wrapper .achieved-wrapper::after{
-      display: none;
+
+  .section-four-header-wrapper .achieved-wrapper::after {
+    display: none;
   }
 
-  .section-four-header-wrapper .objectives-wrapper{
+  .section-four-header-wrapper .objectives-wrapper {
     position: relative;
   }
 
-  .section-four-header-wrapper .objectives-wrapper::after{
-      content: "";
-      position: absolute;
-      bottom: -1rem;
-      left: 0;
-      right: 0;
-      height: 1rem;
-      background-image: url("/images/ico_dash-long.png");
-      background-repeat: no-repeat;
-      background-size: contain;
+  .section-four-header-wrapper .objectives-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background-image: url("/images/ico_dash-long.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .section-four-main-wrapper {
@@ -1015,20 +1023,19 @@ h3 {
     grid-column: span 2;
   }
 
-  .section-five-header-wrapper .and-wrapper{
+  .section-five-header-wrapper .and-wrapper {
     position: relative;
-}
+  }
 
-.section-five-header-wrapper .and-wrapper::after{
+  .section-five-header-wrapper .and-wrapper::after {
     display: none;
-}
+  }
 
-.section-five-header-wrapper .experience-wrapper{
+  .section-five-header-wrapper .experience-wrapper {
     position: relative;
-}
+  }
 
-
-.section-five-header-wrapper .experience-wrapper::after{
+  .section-five-header-wrapper .experience-wrapper::after {
     content: "";
     position: absolute;
     bottom: -1rem;
@@ -1038,7 +1045,7 @@ h3 {
     background-image: url("/images/ico_dash-so-long.png");
     background-repeat: no-repeat;
     background-size: contain;
-}
+  }
 
   .main-description-section-five {
     width: 80%;
@@ -1058,10 +1065,9 @@ h3 {
 
   /* section six */
 
-  .section-six-header-wrapper .our-wrapper::after{
+  .section-six-header-wrapper .our-wrapper::after {
     display: none;
   }
-
 
   .slider-content-wrapper {
     position: relative;
@@ -1091,7 +1097,6 @@ h3 {
   .container-footer-navbar-wrapper {
     flex-direction: column;
   }
-
 
   .navbar-footer-menu-wrapper {
     display: flex;
@@ -1230,7 +1235,7 @@ h3 {
   /* end section four */
 
   /* section five */
-  .section-five-main-wrapper{
+  .section-five-main-wrapper {
     padding: 3rem 0;
   }
   /* end section five */
